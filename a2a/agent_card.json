@@ -1,0 +1,39 @@
+{
+  "id": "agent-research-001",
+  "name": "Research Agent",
+  "version": "1.0.0",
+  "description": "Conducts comprehensive research on topics",
+  "capabilities": [
+    {
+      "name": "web_search",
+      "description": "Search the web for information",
+      "input_schema": {
+        "query": "string",
+        "max_results": "integer"
+      }
+    },
+    {
+      "name": "analyze_document",
+      "description": "Analyze uploaded documents",
+      "input_schema": {
+        "document_url": "string",
+        "analysis_type": "string"
+      }
+    }
+  ],
+  "authentication": {
+    "type": "oauth2",
+    "token_endpoint": "https://research.example.com/oauth/token",
+    "scopes": [
+      "read:documents",
+      "write:analysis"
+    ]
+  },
+  "endpoint": "https://research.example.com/api/v1",
+  "availability": {
+    "status": "active",
+    "uptime_sla": "99.9%",
+    "latency_p50_ms": 150,
+    "rate_limit": "1000 requests/hour"
+  }
+}

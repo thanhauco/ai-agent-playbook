@@ -1,0 +1,264 @@
+{
+    "project": "AI Agent Playbook",
+    "version": "2.0.0",
+    "frameworks": {
+        "classic": [
+            {
+                "name": "LangChain",
+                "directory": "langchain",
+                "examples": [
+                    {
+                        "file": "basic_chain.py",
+                        "description": "Basic LLMChain example"
+                    },
+                    {
+                        "file": "agents.py",
+                        "description": "Agent with tools"
+                    },
+                    {
+                        "file": "memory.py",
+                        "description": "Conversation memory"
+                    },
+                    {
+                        "file": "rag.py",
+                        "description": "RAG with vector store"
+                    }
+                ]
+            },
+            {
+                "name": "CrewAI",
+                "directory": "crewai",
+                "examples": [
+                    {
+                        "file": "basic_crew.py",
+                        "description": "Basic multi-agent crew"
+                    },
+                    {
+                        "file": "content_creation_pipeline.py",
+                        "description": "Content creation workflow"
+                    }
+                ]
+            },
+            {
+                "name": "AutoGen",
+                "directory": "autogen",
+                "examples": [
+                    {
+                        "file": "basic_chat.py",
+                        "description": "Basic conversational agent"
+                    },
+                    {
+                        "file": "group_chat.py",
+                        "description": "Multi-agent group chat"
+                    },
+                    {
+                        "file": "code_review_system.py",
+                        "description": "Code review workflow"
+                    }
+                ]
+            },
+            {
+                "name": "LangGraph",
+                "directory": "langgraph",
+                "examples": [
+                    {
+                        "file": "basic_graph.py",
+                        "description": "Basic graph workflow"
+                    },
+                    {
+                        "file": "customer_support_agent.py",
+                        "description": "Customer support with state"
+                    }
+                ]
+            }
+        ],
+        "modern_2025": [
+            {
+                "name": "Pydantic AI",
+                "directory": "pydantic_ai",
+                "examples": [
+                    {
+                        "file": "basic_agent.py",
+                        "description": "Type-safe agent"
+                    },
+                    {
+                        "file": "validation_agent.py",
+                        "description": "Advanced validation"
+                    },
+                    {
+                        "file": "multi_tool_agent.py",
+                        "description": "Multi-tool with deps"
+                    }
+                ]
+            },
+            {
+                "name": "OpenAI Agents SDK",
+                "directory": "openai_agents",
+                "examples": [
+                    {
+                        "file": "basic_agent.py",
+                        "description": "Function calling agent"
+                    },
+                    {
+                        "file": "handoff_demo.py",
+                        "description": "Multi-agent handoffs"
+                    },
+                    {
+                        "file": "triage_agent.py",
+                        "description": "Triage and routing"
+                    }
+                ]
+            },
+            {
+                "name": "LlamaIndex",
+                "directory": "llamaindex",
+                "examples": [
+                    {
+                        "file": "simple_agent.py",
+                        "description": "ReAct agent"
+                    },
+                    {
+                        "file": "rag_agent.py",
+                        "description": "RAG-powered agent"
+                    },
+                    {
+                        "file": "workflow_example.py",
+                        "description": "Workflow orchestration"
+                    }
+                ]
+            },
+            {
+                "name": "Microsoft Agent Framework",
+                "directory": "microsoft_agents",
+                "examples": [
+                    {
+                        "file": "basic_agent.py",
+                        "description": "Basic agent with threads"
+                    },
+                    {
+                        "file": "agent_with_tools.py",
+                        "description": "Agent with tools"
+                    },
+                    {
+                        "file": "multi_agent_workflow.py",
+                        "description": "Multi-agent workflow"
+                    }
+                ]
+            }
+        ],
+        "protocols": [
+            {
+                "name": "Model Context Protocol",
+                "directory": "mcp",
+                "examples": [
+                    {
+                        "file": "weather_server.py",
+                        "description": "MCP server"
+                    },
+                    {
+                        "file": "mcp_client_demo.py",
+                        "description": "MCP client"
+                    },
+                    {
+                        "file": "agent_using_mcp.py",
+                        "description": "Agent using MCP"
+                    }
+                ]
+            },
+            {
+                "name": "Agent-to-Agent",
+                "directory": "a2a",
+                "examples": [
+                    {
+                        "file": "agent_card.json",
+                        "description": "Agent card definition"
+                    },
+                    {
+                        "file": "client_delegation.py",
+                        "description": "Task delegation"
+                    }
+                ]
+            }
+        ],
+        "advanced": [
+            {
+                "name": "Advanced Patterns",
+                "directory": "advanced",
+                "examples": [
+                    {
+                        "file": "function_calling.py",
+                        "description": "Modern function calling"
+                    },
+                    {
+                        "file": "streaming_agent.py",
+                        "description": "Streaming responses"
+                    },
+                    {
+                        "file": "memory_systems.py",
+                        "description": "Memory management"
+                    }
+                ]
+            }
+        ],
+        "use_cases": [
+            {
+                "name": "Real-World Use Cases",
+                "directory": "use_cases",
+                "examples": [
+                    {
+                        "file": "customer_support_bot.py",
+                        "description": "Customer support agent"
+                    },
+                    {
+                        "file": "research_assistant.py",
+                        "description": "Research workflow"
+                    },
+                    {
+                        "file": "code_reviewer.py",
+                        "description": "Automated code review"
+                    }
+                ]
+            }
+        ]
+    },
+    "testing": {
+        "directory": "testing",
+        "files": [
+            {
+                "file": "test_agent_basics.py",
+                "description": "Basic agent tests"
+            },
+            {
+                "file": "test_tools.py",
+                "description": "Tool testing"
+            }
+        ]
+    },
+    "integrations": {
+        "directory": "integrations",
+        "files": [
+            {
+                "file": "fastapi_agent.py",
+                "description": "REST API server"
+            },
+            {
+                "file": "slack_bot.py",
+                "description": "Slack integration"
+            }
+        ]
+    },
+    "deployment": {
+        "directory": "deployment",
+        "files": [
+            {
+                "file": "Dockerfile",
+                "description": "Container image"
+            },
+            {
+                "file": "docker-compose.yml",
+                "description": "Multi-container setup"
+            }
+        ]
+    },
+    "total_examples": 43
+}

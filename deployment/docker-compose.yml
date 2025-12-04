@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  agent-app:
+    build: ..
+    container_name: ai-agent-app
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - AZURE_OPENAI_API_KEY=${AZURE_OPENAI_API_KEY:-}
+      - AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT:-}
+    volumes:
+      - ../:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - chroma
+    command: python integrations/fastapi_agent.py
+
+  chroma:
+    image: chromadb/chroma:latest
+    container_name: chromadb
+    ports:
+      - "8001:8000"
+    volumes:
+      - chroma-data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+
+volumes:
+  chroma-data:
+    driver: local

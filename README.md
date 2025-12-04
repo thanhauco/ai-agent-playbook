@@ -11,6 +11,7 @@ This repository contains code examples extracted from "The AI Agent Playbook" by
 - **pydantic_ai/**: Type-safe agents with Pydantic validation (2025).
 - **openai_agents/**: OpenAI Agents SDK with handoffs and routing (2025).
 - **llamaindex/**: LlamaIndex RAG-focused agents and workflows (2025).
+- **microsoft_agents/**: Microsoft Agent Framework (unified Semantic Kernel + AutoGen, 2025).
 - **mcp/**: Examples for Model Context Protocol (MCP) servers and clients.
 - **a2a/**: Examples for Agent-to-Agent (A2A) protocol and agent cards.
 - **advanced/**: Advanced patterns (function calling, streaming, memory).
